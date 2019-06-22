@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h2>登陆</h2>
+      <form>
+        <div>
+          <input type="text" name="name" required="" />
+          <label>用户名</label>
+        </div>
+        <div>
+          <input type="password" name="password" required="" />
+          <label>密码</label>
+        </div>
+        <input type="submit" name="submit" value="登陆" />
+      </form>
+    </div>
+    <script>
+      function getRandomNum(min, max) {
+        const randomNum = Math.floor(Math.random() * (max - min)) + min;
+        return randomNum;
+      }
+      document.body.classList.add(`bg-img-${getRandomNum(1, 5)}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-img-1 {
+  background-image: url(bg1.jpg);
+}
+.bg-img-2 {
+  background-image: url(bg2.jpg);
+}
+.bg-img-3 {
+  background-image: url(bg3.jpg);
+}
+.bg-img-4 {
+  background-image: url(bg4.jpg);
+}
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: #fff;
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+.box h2 {
+  margin: 0 0 40px;
+  padding: 0;
+  color: #f7497d;
+}
+.box input {
+  padding: 10px 0;
+  margin-bottom: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #999;
+}
+.box input[type='submit'] {
+  border-bottom: none;
+  cursor: pointer;
+  background-color: #f7497d;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 14px;
+}
+.box form div {
+  position: relative;
+}
+.box form div label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #999;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.box input:focus ~ label,
+.box input:valid ~ label {
+  top: -12px;
+  left: 0;
+  font-size: 12px;
+  color: #f7497d;
+}
+.box input:focus,
+.box input:valid {
+  border-bottom: 2px solid #f7497d;
+}
