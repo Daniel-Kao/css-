@@ -51,6 +51,7 @@ body {
   margin-bottom: 0;
   color: #fff;
   font-size: 14px;
+  letter-spacing: 0.5rem;
 }
 .box form div {
   position: relative;
@@ -62,6 +63,7 @@ body {
   color: #999;
   transition: 0.5s;
   pointer-events: none;
+  letter-spacing: 0.1rem;
 }
 .box input:focus ~ label,
 .box input:valid ~ label {
